@@ -65,3 +65,47 @@ footer{
 #contact{
     margin-top: 125px;
 }
+
+/* Media Query para Celulares */
+@media (max-width: 768px) {
+    
+    /* 1. Ajuste do Menu: Garante que fiquem lado a lado com scroll se faltar espaço */
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Se os itens forem muitos, eles quebram linha suavemente */
+        padding: 15px 10px;
+    }
+
+    h3 {
+        margin: 5px 15px; /* Reduz o espaçamento lateral */
+        font-size: 16px;  /* Diminui a fonte no celular */
+        padding-bottom: 10px;
+    }
+
+    /* 2. Ajuste dos Títulos: O 100px original é muito grande para telas pequenas */
+    h1 {
+        font-size: 45px; /* Reduzido de 100px para caber na tela */
+        padding: 0 15px;
+    }
+
+    .content {
+        font-size: 22px; /* Ajuste proporcional do texto */
+        padding: 0 20px;
+    }
+
+    /* 3. Ajuste de Espaçamentos (Margins) */
+    #desc {
+        margin-top: 80px; /* Menos espaço vazio no topo no celular */
+    }
+
+    #contact {
+        margin-top: 60px;
+    }
+
+    /* 4. Rodapé */
+    footer {
+        flex-direction: column; /* Itens do rodapé um sob o outro se necessário */
+        gap: 10px;
+    }
+}
