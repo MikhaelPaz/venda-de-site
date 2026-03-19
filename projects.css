@@ -60,3 +60,44 @@ h4{
     color: #001d3d;
 
 }
+
+/* Media Query para Celulares (telas até 768px) */
+@media (max-width: 768px) {
+
+    /* 1. Menu Ajustado */
+    .menu {
+        display: flex;
+        flex-wrap: wrap; /* Permite quebrar linha se o celular for muito pequeno */
+        justify-content: center;
+        padding: 15px;
+        gap: 10px; /* Controla o espaço entre os links do menu */
+    }
+
+    h3 {
+        margin: 5px 10px; /* Reduz as margens laterais de 40px */
+        font-size: 16px;
+    }
+
+    /* 2. Container de Projetos (O ponto principal) */
+    .container-projetos {
+        flex-direction: column; /* Coloca os projetos um embaixo do outro */
+        align-items: center;    /* Centraliza as imagens */
+        gap: 40px;              /* Troca os 300px por um espaço menor e vertical */
+        padding: 20px;
+    }
+
+    /* 3. Imagens Flexíveis */
+    img {
+        width: 100%;       /* Imagem ocupa a largura disponível */
+        max-width: 300px;  /* Mas não passa do tamanho original */
+        height: auto;
+    }
+
+    /* 4. Título Principal */
+    h1 {
+        font-size: 32px;   /* Reduz de 56px para não quebrar o layout */
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+}
