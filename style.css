@@ -64,3 +64,42 @@ button{
     color: #001d3d;
     cursor: pointer;
 }
+
+
+/* Configurações para Celulares (telas até 768px) */
+@media (max-width: 768px) {
+.menu {
+    display: flex;          /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;     /* Alinha verticalmente no centro */
+    gap: 20px;              /* Cria um espaçamento igual entre os itens */
+    
+    background-color: #e8f1fb;
+    padding: 25px;
+    font-weight: lighter;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0; /* O 'gap' do pai agora cuida do espaçamento */
+}
+
+    #text1 {
+        margin-top: 80px; /* Reduz o espaçamento no topo */
+        padding: 0 20px;  /* Evita que o texto encoste nas bordas */
+    }
+
+    h1 {
+        font-size: 32px; /* Diminui o título principal */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 90%; /* Botão ocupa quase toda a largura da tela */
+        padding: 20px; /* Reduz o preenchimento interno */
+        font-size: 18px;
+    }
+}
